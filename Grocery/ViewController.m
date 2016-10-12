@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZYItem+CoreDataClass.h"
 
 @interface ViewController ()
 

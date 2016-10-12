@@ -93,7 +93,13 @@ NSString *storeFilename = @"coreData.sqlite";
     if (_store) return;
     
     NSError *error = nil;
-    _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeUrl] options:nil error:&error];
+    NSDictionary *options = @{
+                              //轻量级迁移
+                              NSMigratePersistentStoresAutomaticallyOption : @YES,
+                              NSInferMappingModelAutomaticallyOption: @YES,
+                              NSSQLitePragmasOption: @{@"journal_mode" : @"DELETE"}
+                              };
+    _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeUrl] options:options error:&error];
     
     if (!_store)
     {
