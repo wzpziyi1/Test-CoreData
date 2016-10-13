@@ -115,10 +115,26 @@
 //        [self.helper.context deleteObject:item];
 //    }
     
-    for (int i = 0; i <= 5000; i++)
+    
+    //Test  迁移数据的情况
+//    for (int i = 0; i <= 5000; i++)
+//    {
+//        ZYMeasuerment *measure = [NSEntityDescription insertNewObjectForEntityForName:@"ZYMeasurement" inManagedObjectContext:self.helper.context];
+//        measure.abc = [NSString stringWithFormat:@"kind of %d", i];
+//    }
+//    [self.helper saveContext];
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYMeasurement"];
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"abc" ascending:YES];
+    [request setSortDescriptors:@[sort]];
+    [request setFetchLimit:50];
+    NSError *error = nil;
+    
+    NSArray *objects = [self.helper.context executeFetchRequest:request error:&error];
+    
+    for (ZYMeasuerment *measurement in objects)
     {
-        ZYMeasuerment *measure = [NSEntityDescription insertNewObjectForEntityForName:@"ZYMeasurement" inManagedObjectContext:self.helper.context];
-        measure.abc = [NSString stringWithFormat:@"kind of %d", i];
+        NSLog(@"%@", measurement.abc);
     }
     
 }
