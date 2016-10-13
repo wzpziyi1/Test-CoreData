@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09357D841DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09357D811DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m */; };
+		09357D851DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09357D831DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m */; };
 		0937ABE31DAC9A0100FBA883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937ABE21DAC9A0100FBA883 /* main.m */; };
 		0937ABE61DAC9A0100FBA883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937ABE51DAC9A0100FBA883 /* AppDelegate.m */; };
 		0937ABE91DAC9A0100FBA883 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937ABE81DAC9A0100FBA883 /* ViewController.m */; };
@@ -39,6 +41,10 @@
 
 /* Begin PBXFileReference section */
 		09357D791DAE104E00D3B877 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		09357D801DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYMeasuerment+CoreDataClass.h"; path = "../../ZYMeasuerment+CoreDataClass.h"; sourceTree = "<group>"; };
+		09357D811DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYMeasuerment+CoreDataClass.m"; path = "../../ZYMeasuerment+CoreDataClass.m"; sourceTree = "<group>"; };
+		09357D821DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYMeasuerment+CoreDataProperties.h"; path = "../../ZYMeasuerment+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09357D831DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYMeasuerment+CoreDataProperties.m"; path = "../../ZYMeasuerment+CoreDataProperties.m"; sourceTree = "<group>"; };
 		0937ABDE1DAC9A0100FBA883 /* Grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0937ABE21DAC9A0100FBA883 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0937ABE41DAC9A0100FBA883 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,6 +161,10 @@
 			children = (
 				0937AC151DAC9A3D00FBA883 /* CoreDataHelper.h */,
 				0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */,
+				09357D801DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.h */,
+				09357D811DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m */,
+				09357D821DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.h */,
+				09357D831DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m */,
 				0937AC1D1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.h */,
 				0937AC1E1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.m */,
 				0937AC171DAC9A3D00FBA883 /* Model.xcdatamodeld */,
@@ -304,6 +314,8 @@
 				0937ABE61DAC9A0100FBA883 /* AppDelegate.m in Sources */,
 				0937AC1A1DAC9A3D00FBA883 /* Model.xcdatamodeld in Sources */,
 				0937AC191DAC9A3D00FBA883 /* CoreDataHelper.m in Sources */,
+				09357D851DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m in Sources */,
+				09357D841DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m in Sources */,
 				0937ABE31DAC9A0100FBA883 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

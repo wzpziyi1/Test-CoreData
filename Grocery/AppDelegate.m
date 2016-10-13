@@ -10,6 +10,9 @@
 #import "CoreDataHelper.h"
 #import "ZYItem+CoreDataClass.h"
 #import "ZYItem+CoreDataProperties.h"
+#import "ZYMeasuerment+CoreDataProperties.h"
+#import "ZYMeasuerment+CoreDataClass.h"
+
 
 @interface AppDelegate ()
 @property (nonatomic, strong) CoreDataHelper *helper;
@@ -111,6 +114,12 @@
 //    {
 //        [self.helper.context deleteObject:item];
 //    }
+    
+    for (int i = 0; i <= 5000; i++)
+    {
+        ZYMeasuerment *measure = [NSEntityDescription insertNewObjectForEntityForName:@"ZYMeasurement" inManagedObjectContext:self.helper.context];
+        measure.abc = [NSString stringWithFormat:@"kind of %d", i];
+    }
     
 }
 

@@ -7,11 +7,11 @@
         <attribute name="photoData" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Float" defaultValueString="1" usesScalarValueType="NO" syncable="YES"/>
     </entity>
-    <entity name="ZYMeasuerment" syncable="YES">
+    <entity name="ZYMeasurement" representedClassName="ZYMeasuerment" syncable="YES">
         <attribute name="abc" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="ZYItem" positionX="-2133" positionY="-1989" width="128" height="120"/>
-        <element name="ZYMeasuerment" positionX="-2124" positionY="-1944" width="128" height="60"/>
+        <element name="ZYMeasurement" positionX="-2124" positionY="-1944" width="128" height="60"/>
     </elements>
 </model>
