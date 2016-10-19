@@ -11,7 +11,7 @@
 #import "ZYItem+CoreDataClass.h"
 #import "ZYItem+CoreDataProperties.h"
 #import "ZYAmount+CoreDataClass.h"
-
+#import "ZYMigrationVc.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) CoreDataHelper *helper;
@@ -24,6 +24,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    
+    ZYMigrationVc *vc = [[ZYMigrationVc alloc] initWithNibName:@"ZYMigrationVc" bundle:nil];
+    
+    self.window.rootViewController = vc;
     return YES;
 }
 
