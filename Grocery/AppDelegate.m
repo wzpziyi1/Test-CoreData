@@ -10,8 +10,7 @@
 #import "CoreDataHelper.h"
 #import "ZYItem+CoreDataClass.h"
 #import "ZYItem+CoreDataProperties.h"
-#import "ZYMeasuerment+CoreDataProperties.h"
-#import "ZYMeasuerment+CoreDataClass.h"
+#import "ZYAmount+CoreDataClass.h"
 
 
 @interface AppDelegate ()
@@ -124,17 +123,17 @@
 //    }
 //    [self.helper saveContext];
     
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYMeasurement"];
-    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"abc" ascending:YES];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYAmount"];
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"xyz" ascending:YES];
     [request setSortDescriptors:@[sort]];
     [request setFetchLimit:50];
     NSError *error = nil;
     
     NSArray *objects = [self.helper.context executeFetchRequest:request error:&error];
     
-    for (ZYMeasuerment *measurement in objects)
+    for (ZYAmount *amount in objects)
     {
-        NSLog(@"%@", measurement.abc);
+        NSLog(@"%@", amount.xyz);
     }
     
 }

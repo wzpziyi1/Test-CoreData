@@ -96,7 +96,7 @@ NSString *storeFilename = @"coreData.sqlite";
     NSDictionary *options = @{
                               //轻量级迁移
                               NSMigratePersistentStoresAutomaticallyOption : @YES,
-                              NSInferMappingModelAutomaticallyOption: @YES,
+                              NSInferMappingModelAutomaticallyOption: @NO,
                               NSSQLitePragmasOption: @{@"journal_mode" : @"DELETE"}
                               };
     _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeUrl] options:options error:&error];
