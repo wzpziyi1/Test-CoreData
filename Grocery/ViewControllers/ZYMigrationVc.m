@@ -9,9 +9,7 @@
 #import "ZYMigrationVc.h"
 
 @interface ZYMigrationVc ()
-@property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
-@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @end
 
 @implementation ZYMigrationVc

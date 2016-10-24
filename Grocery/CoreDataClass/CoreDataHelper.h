@@ -9,12 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class ZYMigrationVc;
 @interface CoreDataHelper : NSObject
 @property (nonatomic, readonly) NSManagedObjectContext *context;
 @property (nonatomic, readonly) NSManagedObjectModel *model;
 @property (nonatomic, readonly) NSPersistentStore *store;
 @property (nonatomic, readonly) NSPersistentStoreCoordinator *coordinator;
 
+@property (nonatomic, strong) ZYMigrationVc *migrationVc;
+
 - (void)setupCoreData;
 - (void)saveContext;
+
+// 判断是否需要迁移
+- (BOOL)isMigrationNecessaryForStore:(NSURL *)storeUrl;
 @end

@@ -11,13 +11,12 @@
 #import "ZYItem+CoreDataClass.h"
 #import "ZYItem+CoreDataProperties.h"
 #import "ZYAmount+CoreDataClass.h"
+#import "ZYUnit+CoreDataClass.h"
 #import "ZYMigrationVc.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) CoreDataHelper *helper;
 @end
-
-
 
 @implementation AppDelegate
 #define debug 1
@@ -130,17 +129,18 @@
 //    }
 //    [self.helper saveContext];
     
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYAmount"];
-    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"xyz" ascending:YES];
+   
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYUnit"];
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
     [request setSortDescriptors:@[sort]];
     [request setFetchLimit:50];
     NSError *error = nil;
     
     NSArray *objects = [self.helper.context executeFetchRequest:request error:&error];
     
-    for (ZYAmount *amount in objects)
+    for (ZYUnit *unit in objects)
     {
-        NSLog(@"%@", amount.xyz);
+        NSLog(@"%@", unit.name);
     }
     
 }

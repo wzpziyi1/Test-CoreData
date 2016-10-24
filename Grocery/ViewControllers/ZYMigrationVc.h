@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ZYMigrationVc : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @end
