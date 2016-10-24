@@ -97,7 +97,7 @@ NSString *storeFilename = @"coreData.sqlite";
     if (_store) return;
     
     //是否开启手动迁移，显示迁移进度
-    BOOL useMigrationManager = YES;
+    BOOL useMigrationManager = NO;
     
     if (useMigrationManager)
     {
@@ -110,7 +110,7 @@ NSString *storeFilename = @"coreData.sqlite";
         NSDictionary *options = @{
                                   //轻量级迁移
                                   NSMigratePersistentStoresAutomaticallyOption : @YES,
-                                  NSInferMappingModelAutomaticallyOption: @NO,
+                                  NSInferMappingModelAutomaticallyOption: @YES,
                                   NSSQLitePragmasOption: @{@"journal_mode" : @"DELETE"}
                                   };
         _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType
