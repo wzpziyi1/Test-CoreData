@@ -130,18 +130,36 @@
 //    [self.helper saveContext];
     
    
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYUnit"];
-    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
-    [request setSortDescriptors:@[sort]];
-    [request setFetchLimit:50];
-    NSError *error = nil;
+//    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYUnit"];
+//    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES];
+//    [request setSortDescriptors:@[sort]];
+//    [request setFetchLimit:50];
+//    NSError *error = nil;
+//    
+//    NSArray *objects = [self.helper.context executeFetchRequest:request error:&error];
+//    
+//    for (ZYUnit *unit in objects)
+//    {
+//        NSLog(@"%@", unit.name);
+//    }
     
-    NSArray *objects = [self.helper.context executeFetchRequest:request error:&error];
-    
-    for (ZYUnit *unit in objects)
-    {
-        NSLog(@"%@", unit.name);
-    }
+//    ZYUnit *kg = [NSEntityDescription insertNewObjectForEntityForName:@"ZYUnit" inManagedObjectContext:self.helper.context];
+//    
+//    ZYItem *oranges = [NSEntityDescription insertNewObjectForEntityForName:@"ZYItem" inManagedObjectContext:self.helper.context];
+//    
+//    ZYItem *bananas = [NSEntityDescription insertNewObjectForEntityForName:@"ZYItem" inManagedObjectContext:self.helper.context];
+//    
+//    kg.name = @"Kg";
+//    oranges.name = @"Oranges";
+//    bananas.name = @"Bananas";
+//    oranges.quantity = [NSNumber numberWithInt:1];
+//    bananas.quantity = [NSNumber numberWithInt:4];
+//    oranges.listed = [NSNumber numberWithBool:YES];
+//    bananas.listed = [NSNumber numberWithBool:YES];
+//    oranges.unit = kg;
+//    bananas.unit = kg;
+//    
+//    [self.helper saveContext];
     
 }
 

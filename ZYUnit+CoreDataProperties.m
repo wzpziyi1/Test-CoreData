@@ -2,7 +2,7 @@
 //  ZYUnit+CoreDataProperties.m
 //  Grocery
 //
-//  Created by 王志盼 on 2016/10/24.
+//  Created by 王志盼 on 2016/10/25.
 //  Copyright © 2016年 王志盼. All rights reserved.
 //
 
@@ -15,5 +15,6 @@
 }
 
 @dynamic name;
+@dynamic items;
 
 @end
