@@ -160,7 +160,74 @@
 //    bananas.unit = kg;
 //    
 //    [self.helper saveContext];
+//    
+//    [self showUnitAndItemCount];
+//    
+//    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYUnit"];
+//    NSPredicate *filter = [NSPredicate predicateWithFormat:@"name == %@", @"Kg"];
+//    [request setPredicate:filter];
+//    NSArray *kgUnits = [self.helper.context executeFetchRequest:request error:nil];
+//    
+//    for (ZYUnit *unit in kgUnits)
+//    {
+//        //用于验证是否可以执行删除操作，当删除关系是Deny
+//        NSError *validateError = nil;
+//        if ([unit validateForDelete:&validateError])
+//        {
+//            NSLog(@"Deleting '%@'", unit.name);
+//            [self.helper.context deleteObject:unit];
+//        }
+//        else
+//        {
+//            NSLog(@"Failed to delete %@, Error: %@", unit.name, validateError.localizedDescription);
+//        }
+//        
+//    }
     
+    [self showUnitAndItemCount];
+    
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ZYUnit"];
+    NSPredicate *filter = [NSPredicate predicateWithFormat:@"name == %@", @"Kg"];
+    [request setPredicate:filter];
+    
+    NSArray *kgUnits = [self.helper.context executeFetchRequest:request error:nil];
+    
+    for (ZYUnit *unit in kgUnits)
+    {
+        [self.helper.context deleteObject:unit];
+    }
+    
+    [self.helper saveContext];
+    [self showUnitAndItemCount];
+}
+
+- (void)showUnitAndItemCount
+{
+    NSFetchRequest *itemRequest = [NSFetchRequest fetchRequestWithEntityName:@"ZYItem"];
+    NSError *error = nil;
+    NSArray *items = [self.helper.context executeFetchRequest:itemRequest error:&error];
+    
+    if (error)
+    {
+        NSLog(@"%@", error);
+    }
+    else
+    {
+        NSLog(@"ItemCount: %d", (int)items.count);
+    }
+    
+    NSFetchRequest *unitRequest = [NSFetchRequest fetchRequestWithEntityName:@"ZYUnit"];
+    error = nil;
+    NSArray *units = [self.helper.context executeFetchRequest:unitRequest error:&error];
+    
+    if (error)
+    {
+        NSLog(@"%@", error);
+    }
+    else
+    {
+        NSLog(@"unitCount: %d", (int)units.count);
+    }
 }
 
 #pragma mark ---- getter && setter
