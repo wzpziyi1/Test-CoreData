@@ -2,7 +2,7 @@
 //  ZYItem+CoreDataProperties.h
 //  Grocery
 //
-//  Created by 王志盼 on 2016/10/25.
+//  Created by 王志盼 on 2016/12/20.
 //  Copyright © 2016年 王志盼. All rights reserved.
 //  This file was automatically generated and should not be edited.
 //
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class ZYUnit;
+@class ZYUnit, ZYLocationAtHome, ZYLocationAtShop;
 
 @interface ZYItem (CoreDataProperties)
 
@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSData *photoData;
 @property (nullable, nonatomic, copy) NSNumber *quantity;
 @property (nullable, nonatomic, retain) ZYUnit *unit;
+@property (nullable, nonatomic, retain) ZYLocationAtHome *loactionAtHome;
+@property (nullable, nonatomic, retain) ZYLocationAtShop *locationAtStop;
 
 @end
 

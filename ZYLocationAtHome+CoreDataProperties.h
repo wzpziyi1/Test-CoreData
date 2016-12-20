@@ -1,28 +1,26 @@
 //
-//  ZYUnit+CoreDataProperties.h
+//  ZYLocationAtHome+CoreDataProperties.h
 //  Grocery
 //
 //  Created by 王志盼 on 2016/12/20.
 //  Copyright © 2016年 王志盼. All rights reserved.
 //
 
-#import "ZYUnit+CoreDataClass.h"
+#import "ZYLocationAtHome+CoreDataClass.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class ZYItem;
+@interface ZYLocationAtHome (CoreDataProperties)
 
-@interface ZYUnit (CoreDataProperties)
++ (NSFetchRequest<ZYLocationAtHome *> *)fetchRequest;
 
-+ (NSFetchRequest<ZYUnit *> *)fetchRequest;
-
-@property (nullable, nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, copy) NSString *storedIn;
 @property (nullable, nonatomic, retain) NSSet<ZYItem *> *items;
 
 @end
 
-@interface ZYUnit (CoreDataGeneratedAccessors)
+@interface ZYLocationAtHome (CoreDataGeneratedAccessors)
 
 - (void)addItemsObject:(ZYItem *)value;
 - (void)removeItemsObject:(ZYItem *)value;

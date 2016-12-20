@@ -13,10 +13,7 @@
 		09074B721DB76B6500BEC049 /* ZYMigrationVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 09074B701DB76B6500BEC049 /* ZYMigrationVc.m */; };
 		09074B731DB76B6500BEC049 /* ZYMigrationVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09074B711DB76B6500BEC049 /* ZYMigrationVc.xib */; };
 		090BA00C1DBE0494009EE73E /* ZYUnit+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BA0091DBE0494009EE73E /* ZYUnit+CoreDataClass.m */; };
-		090BA00D1DBE0494009EE73E /* ZYUnit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BA00B1DBE0494009EE73E /* ZYUnit+CoreDataProperties.m */; };
 		090BA00F1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 090BA00E1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel */; };
-		090BA01C1DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BA0191DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.m */; };
-		090BA01D1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 090BA01B1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.m */; };
 		09357D841DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09357D811DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m */; };
 		09357D851DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09357D831DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m */; };
 		0937ABE31DAC9A0100FBA883 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937ABE21DAC9A0100FBA883 /* main.m */; };
@@ -27,7 +24,14 @@
 		0937AC071DAC9A0100FBA883 /* GroceryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC061DAC9A0100FBA883 /* GroceryUITests.m */; };
 		0937AC191DAC9A3D00FBA883 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */; };
 		0937AC1A1DAC9A3D00FBA883 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC171DAC9A3D00FBA883 /* Model.xcdatamodeld */; };
-		0937AC201DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC1E1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.m */; };
+		09B1E6F51E08E45E0052F55E /* ZYLocation+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6E61E08E45E0052F55E /* ZYLocation+CoreDataClass.m */; };
+		09B1E6F61E08E45E0052F55E /* ZYLocation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6E81E08E45E0052F55E /* ZYLocation+CoreDataProperties.m */; };
+		09B1E6F71E08E45E0052F55E /* ZYItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6EA1E08E45E0052F55E /* ZYItem+CoreDataProperties.m */; };
+		09B1E6F81E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6EC1E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.m */; };
+		09B1E6F91E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6EE1E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.m */; };
+		09B1E6FA1E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6F01E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m */; };
+		09B1E6FB1E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6F21E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m */; };
+		09B1E6FF1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6FE1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +64,8 @@
 		090BA0071DBE03E9009EE73E /* Model 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 4.xcdatamodel"; sourceTree = "<group>"; };
 		090BA0081DBE0494009EE73E /* ZYUnit+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYUnit+CoreDataClass.h"; path = "../../ZYUnit+CoreDataClass.h"; sourceTree = "<group>"; };
 		090BA0091DBE0494009EE73E /* ZYUnit+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYUnit+CoreDataClass.m"; path = "../../ZYUnit+CoreDataClass.m"; sourceTree = "<group>"; };
-		090BA00A1DBE0494009EE73E /* ZYUnit+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYUnit+CoreDataProperties.h"; path = "../../ZYUnit+CoreDataProperties.h"; sourceTree = "<group>"; };
-		090BA00B1DBE0494009EE73E /* ZYUnit+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYUnit+CoreDataProperties.m"; path = "../../ZYUnit+CoreDataProperties.m"; sourceTree = "<group>"; };
 		090BA00E1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model3_To_Model4.xcmappingmodel; sourceTree = "<group>"; };
 		090BA0171DBF4EA7009EE73E /* Model 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 5.xcdatamodel"; sourceTree = "<group>"; };
-		090BA0181DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYUnit+CoreDataProperties.h"; path = "../../ZYUnit+CoreDataProperties.h"; sourceTree = "<group>"; };
-		090BA0191DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYUnit+CoreDataProperties.m"; path = "../../ZYUnit+CoreDataProperties.m"; sourceTree = "<group>"; };
-		090BA01A1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYItem+CoreDataProperties.h"; path = "../../ZYItem+CoreDataProperties.h"; sourceTree = "<group>"; };
-		090BA01B1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYItem+CoreDataProperties.m"; path = "../../ZYItem+CoreDataProperties.m"; sourceTree = "<group>"; };
 		09357D791DAE104E00D3B877 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		09357D801DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYMeasuerment+CoreDataClass.h"; path = "../../ZYMeasuerment+CoreDataClass.h"; sourceTree = "<group>"; };
 		09357D811DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYMeasuerment+CoreDataClass.m"; path = "../../ZYMeasuerment+CoreDataClass.m"; sourceTree = "<group>"; };
@@ -89,8 +87,23 @@
 		0937AC151DAC9A3D00FBA883 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		0937AC181DAC9A3D00FBA883 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		0937AC1D1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYItem+CoreDataProperties.h"; path = "../../ZYItem+CoreDataProperties.h"; sourceTree = "<group>"; };
-		0937AC1E1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYItem+CoreDataProperties.m"; path = "../../ZYItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		096856C71DFF920F00E80CCD /* Model 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 6.xcdatamodel"; sourceTree = "<group>"; };
+		09B1E6E51E08E45E0052F55E /* ZYLocation+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocation+CoreDataClass.h"; path = "../../ZYLocation+CoreDataClass.h"; sourceTree = "<group>"; };
+		09B1E6E61E08E45E0052F55E /* ZYLocation+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocation+CoreDataClass.m"; path = "../../ZYLocation+CoreDataClass.m"; sourceTree = "<group>"; };
+		09B1E6E71E08E45E0052F55E /* ZYLocation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocation+CoreDataProperties.h"; path = "../../ZYLocation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09B1E6E81E08E45E0052F55E /* ZYLocation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocation+CoreDataProperties.m"; path = "../../ZYLocation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		09B1E6E91E08E45E0052F55E /* ZYItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYItem+CoreDataProperties.h"; path = "../../ZYItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09B1E6EA1E08E45E0052F55E /* ZYItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYItem+CoreDataProperties.m"; path = "../../ZYItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		09B1E6EB1E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocationAtHome+CoreDataClass.h"; path = "../../ZYLocationAtHome+CoreDataClass.h"; sourceTree = "<group>"; };
+		09B1E6EC1E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocationAtHome+CoreDataClass.m"; path = "../../ZYLocationAtHome+CoreDataClass.m"; sourceTree = "<group>"; };
+		09B1E6ED1E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocationAtHome+CoreDataProperties.h"; path = "../../ZYLocationAtHome+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09B1E6EE1E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocationAtHome+CoreDataProperties.m"; path = "../../ZYLocationAtHome+CoreDataProperties.m"; sourceTree = "<group>"; };
+		09B1E6EF1E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocationAtShop+CoreDataClass.h"; path = "../../ZYLocationAtShop+CoreDataClass.h"; sourceTree = "<group>"; };
+		09B1E6F01E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocationAtShop+CoreDataClass.m"; path = "../../ZYLocationAtShop+CoreDataClass.m"; sourceTree = "<group>"; };
+		09B1E6F11E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocationAtShop+CoreDataProperties.h"; path = "../../ZYLocationAtShop+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09B1E6F21E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocationAtShop+CoreDataProperties.m"; path = "../../ZYLocationAtShop+CoreDataProperties.m"; sourceTree = "<group>"; };
+		09B1E6FD1E08E57C0052F55E /* ZYUnit+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYUnit+CoreDataProperties.h"; path = "../../ZYUnit+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09B1E6FE1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYUnit+CoreDataProperties.m"; path = "../../ZYUnit+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,14 +207,24 @@
 			children = (
 				0937AC151DAC9A3D00FBA883 /* CoreDataHelper.h */,
 				0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */,
-				090BA0181DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.h */,
-				090BA0191DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.m */,
-				090BA01A1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.h */,
-				090BA01B1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.m */,
+				09B1E6E51E08E45E0052F55E /* ZYLocation+CoreDataClass.h */,
+				09B1E6E61E08E45E0052F55E /* ZYLocation+CoreDataClass.m */,
+				09B1E6E71E08E45E0052F55E /* ZYLocation+CoreDataProperties.h */,
+				09B1E6E81E08E45E0052F55E /* ZYLocation+CoreDataProperties.m */,
+				09B1E6E91E08E45E0052F55E /* ZYItem+CoreDataProperties.h */,
+				09B1E6EA1E08E45E0052F55E /* ZYItem+CoreDataProperties.m */,
+				09B1E6EB1E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.h */,
+				09B1E6EC1E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.m */,
+				09B1E6ED1E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.h */,
+				09B1E6EE1E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.m */,
+				09B1E6EF1E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.h */,
+				09B1E6F01E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m */,
+				09B1E6F11E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.h */,
+				09B1E6F21E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m */,
+				09B1E6FD1E08E57C0052F55E /* ZYUnit+CoreDataProperties.h */,
+				09B1E6FE1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m */,
 				090BA0081DBE0494009EE73E /* ZYUnit+CoreDataClass.h */,
 				090BA0091DBE0494009EE73E /* ZYUnit+CoreDataClass.m */,
-				090BA00A1DBE0494009EE73E /* ZYUnit+CoreDataProperties.h */,
-				090BA00B1DBE0494009EE73E /* ZYUnit+CoreDataProperties.m */,
 				09074B661DB7631700BEC049 /* ZYAmount+CoreDataClass.h */,
 				09074B671DB7631700BEC049 /* ZYAmount+CoreDataClass.m */,
 				09074B681DB7631700BEC049 /* ZYAmount+CoreDataProperties.h */,
@@ -210,8 +233,6 @@
 				09357D811DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m */,
 				09357D821DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.h */,
 				09357D831DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m */,
-				0937AC1D1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.h */,
-				0937AC1E1DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.m */,
 				0937AC171DAC9A3D00FBA883 /* Model.xcdatamodeld */,
 				09074B6C1DB763A400BEC049 /* Model2_To_Model3.xcmappingmodel */,
 				090BA00E1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel */,
@@ -356,21 +377,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B1E6FA1E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m in Sources */,
 				090BA00C1DBE0494009EE73E /* ZYUnit+CoreDataClass.m in Sources */,
 				09074B721DB76B6500BEC049 /* ZYMigrationVc.m in Sources */,
-				0937AC201DAC9B2C00FBA883 /* ZYItem+CoreDataProperties.m in Sources */,
-				090BA01D1DBF4F6D009EE73E /* ZYItem+CoreDataProperties.m in Sources */,
+				09B1E6FF1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m in Sources */,
 				090BA00F1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel in Sources */,
-				090BA00D1DBE0494009EE73E /* ZYUnit+CoreDataProperties.m in Sources */,
+				09B1E6F61E08E45E0052F55E /* ZYLocation+CoreDataProperties.m in Sources */,
 				0937ABE61DAC9A0100FBA883 /* AppDelegate.m in Sources */,
 				0937AC1A1DAC9A3D00FBA883 /* Model.xcdatamodeld in Sources */,
+				09B1E6F51E08E45E0052F55E /* ZYLocation+CoreDataClass.m in Sources */,
 				09074B6A1DB7631700BEC049 /* ZYAmount+CoreDataClass.m in Sources */,
 				0937AC191DAC9A3D00FBA883 /* CoreDataHelper.m in Sources */,
+				09B1E6F71E08E45E0052F55E /* ZYItem+CoreDataProperties.m in Sources */,
 				09074B6B1DB7631700BEC049 /* ZYAmount+CoreDataProperties.m in Sources */,
+				09B1E6FB1E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m in Sources */,
+				09B1E6F91E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.m in Sources */,
+				09B1E6F81E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.m in Sources */,
 				09357D851DAE171300D3B877 /* ZYMeasuerment+CoreDataProperties.m in Sources */,
 				09357D841DAE171300D3B877 /* ZYMeasuerment+CoreDataClass.m in Sources */,
 				0937ABE31DAC9A0100FBA883 /* main.m in Sources */,
-				090BA01C1DBF4F6D009EE73E /* ZYUnit+CoreDataProperties.m in Sources */,
 				09074B6D1DB763A400BEC049 /* Model2_To_Model3.xcmappingmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,13 +654,14 @@
 		0937AC171DAC9A3D00FBA883 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				096856C71DFF920F00E80CCD /* Model 6.xcdatamodel */,
 				090BA0171DBF4EA7009EE73E /* Model 5.xcdatamodel */,
 				090BA0071DBE03E9009EE73E /* Model 4.xcdatamodel */,
 				09074B651DB762A000BEC049 /* Model 3.xcdatamodel */,
 				09357D791DAE104E00D3B877 /* Model 2.xcdatamodel */,
 				0937AC181DAC9A3D00FBA883 /* Model.xcdatamodel */,
 			);
-			currentVersion = 090BA0171DBF4EA7009EE73E /* Model 5.xcdatamodel */;
+			currentVersion = 096856C71DFF920F00E80CCD /* Model 6.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

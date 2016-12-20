@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16B2555" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ZYItem" representedClassName="ZYItem" syncable="YES" codeGenerationType="class">
+        <attribute name="collected" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="listed" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="NewItem" indexed="YES" syncable="YES"/>
+        <attribute name="photoData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Float" defaultValueString="1" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="loactionAtHome" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ZYLocationAtHome" inverseName="items" inverseEntity="ZYLocationAtHome" syncable="YES"/>
+        <relationship name="locationAtStop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ZYLocationAtShop" inverseName="items" inverseEntity="ZYLocationAtShop" syncable="YES"/>
+        <relationship name="unit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ZYUnit" inverseName="items" inverseEntity="ZYUnit" syncable="YES"/>
+    </entity>
+    <entity name="ZYLocation" representedClassName="ZYLocation" isAbstract="YES" syncable="YES">
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ZYLocationAtHome" representedClassName="ZYLocationAtHome" parentEntity="ZYLocation" syncable="YES">
+        <attribute name="storedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ZYItem" inverseName="loactionAtHome" inverseEntity="ZYItem" syncable="YES"/>
+    </entity>
+    <entity name="ZYLocationAtShop" representedClassName="ZYLocationAtShop" parentEntity="ZYLocation" syncable="YES">
+        <attribute name="aisle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ZYItem" inverseName="locationAtStop" inverseEntity="ZYItem" syncable="YES"/>
+    </entity>
+    <entity name="ZYUnit" representedClassName="ZYUnit" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="ZYItem" inverseName="unit" inverseEntity="ZYItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ZYItem" positionX="-2097" positionY="-1951" width="128" height="163"/>
+        <element name="ZYLocation" positionX="-2439" positionY="-1998" width="128" height="58"/>
+        <element name="ZYUnit" positionX="-2441" positionY="-1846" width="128" height="73"/>
+        <element name="ZYLocationAtHome" positionX="-2376" positionY="-2259" width="128" height="73"/>
+        <element name="ZYLocationAtShop" positionX="-2108" positionY="-2178" width="128" height="73"/>
+    </elements>
+</model>
