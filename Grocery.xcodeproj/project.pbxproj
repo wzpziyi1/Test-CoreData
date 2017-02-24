@@ -22,7 +22,6 @@
 		0937ABF11DAC9A0100FBA883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0937ABEF1DAC9A0100FBA883 /* LaunchScreen.storyboard */; };
 		0937ABFC1DAC9A0100FBA883 /* GroceryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937ABFB1DAC9A0100FBA883 /* GroceryTests.m */; };
 		0937AC071DAC9A0100FBA883 /* GroceryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC061DAC9A0100FBA883 /* GroceryUITests.m */; };
-		0937AC191DAC9A3D00FBA883 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */; };
 		0937AC1A1DAC9A3D00FBA883 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0937AC171DAC9A3D00FBA883 /* Model.xcdatamodeld */; };
 		09B1E6F51E08E45E0052F55E /* ZYLocation+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6E61E08E45E0052F55E /* ZYLocation+CoreDataClass.m */; };
 		09B1E6F61E08E45E0052F55E /* ZYLocation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6E81E08E45E0052F55E /* ZYLocation+CoreDataProperties.m */; };
@@ -32,6 +31,8 @@
 		09B1E6FA1E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6F01E08E45E0052F55E /* ZYLocationAtShop+CoreDataClass.m */; };
 		09B1E6FB1E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6F21E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m */; };
 		09B1E6FF1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E6FE1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m */; };
+		09B1E7031E08EBD90052F55E /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E7021E08EBD90052F55E /* CoreDataHelper.m */; };
+		09B1E7061E08EBEF0052F55E /* ZYCoreDataTVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B1E7051E08EBEF0052F55E /* ZYCoreDataTVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +85,6 @@
 		0937AC021DAC9A0100FBA883 /* GroceryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0937AC061DAC9A0100FBA883 /* GroceryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroceryUITests.m; sourceTree = "<group>"; };
 		0937AC081DAC9A0100FBA883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0937AC151DAC9A3D00FBA883 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
-		0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		0937AC181DAC9A3D00FBA883 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		096856C71DFF920F00E80CCD /* Model 6.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 6.xcdatamodel"; sourceTree = "<group>"; };
 		09B1E6E51E08E45E0052F55E /* ZYLocation+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYLocation+CoreDataClass.h"; path = "../../ZYLocation+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -104,6 +103,10 @@
 		09B1E6F21E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYLocationAtShop+CoreDataProperties.m"; path = "../../ZYLocationAtShop+CoreDataProperties.m"; sourceTree = "<group>"; };
 		09B1E6FD1E08E57C0052F55E /* ZYUnit+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ZYUnit+CoreDataProperties.h"; path = "../../ZYUnit+CoreDataProperties.h"; sourceTree = "<group>"; };
 		09B1E6FE1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ZYUnit+CoreDataProperties.m"; path = "../../ZYUnit+CoreDataProperties.m"; sourceTree = "<group>"; };
+		09B1E7011E08EBD90052F55E /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		09B1E7021E08EBD90052F55E /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		09B1E7041E08EBEF0052F55E /* ZYCoreDataTVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCoreDataTVc.h; sourceTree = "<group>"; };
+		09B1E7051E08EBEF0052F55E /* ZYCoreDataTVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCoreDataTVc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,8 +208,7 @@
 		0937AC141DAC9A3D00FBA883 /* CoreDataClass */ = {
 			isa = PBXGroup;
 			children = (
-				0937AC151DAC9A3D00FBA883 /* CoreDataHelper.h */,
-				0937AC161DAC9A3D00FBA883 /* CoreDataHelper.m */,
+				09B1E7001E08EBD90052F55E /* Resource */,
 				09B1E6E51E08E45E0052F55E /* ZYLocation+CoreDataClass.h */,
 				09B1E6E61E08E45E0052F55E /* ZYLocation+CoreDataClass.m */,
 				09B1E6E71E08E45E0052F55E /* ZYLocation+CoreDataProperties.h */,
@@ -238,6 +240,17 @@
 				090BA00E1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel */,
 			);
 			path = CoreDataClass;
+			sourceTree = "<group>";
+		};
+		09B1E7001E08EBD90052F55E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				09B1E7011E08EBD90052F55E /* CoreDataHelper.h */,
+				09B1E7021E08EBD90052F55E /* CoreDataHelper.m */,
+				09B1E7041E08EBEF0052F55E /* ZYCoreDataTVc.h */,
+				09B1E7051E08EBEF0052F55E /* ZYCoreDataTVc.m */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,13 +396,14 @@
 				09B1E6FF1E08E57C0052F55E /* ZYUnit+CoreDataProperties.m in Sources */,
 				090BA00F1DBE0526009EE73E /* Model3_To_Model4.xcmappingmodel in Sources */,
 				09B1E6F61E08E45E0052F55E /* ZYLocation+CoreDataProperties.m in Sources */,
+				09B1E7031E08EBD90052F55E /* CoreDataHelper.m in Sources */,
 				0937ABE61DAC9A0100FBA883 /* AppDelegate.m in Sources */,
 				0937AC1A1DAC9A3D00FBA883 /* Model.xcdatamodeld in Sources */,
 				09B1E6F51E08E45E0052F55E /* ZYLocation+CoreDataClass.m in Sources */,
 				09074B6A1DB7631700BEC049 /* ZYAmount+CoreDataClass.m in Sources */,
-				0937AC191DAC9A3D00FBA883 /* CoreDataHelper.m in Sources */,
 				09B1E6F71E08E45E0052F55E /* ZYItem+CoreDataProperties.m in Sources */,
 				09074B6B1DB7631700BEC049 /* ZYAmount+CoreDataProperties.m in Sources */,
+				09B1E7061E08EBEF0052F55E /* ZYCoreDataTVc.m in Sources */,
 				09B1E6FB1E08E45E0052F55E /* ZYLocationAtShop+CoreDataProperties.m in Sources */,
 				09B1E6F91E08E45E0052F55E /* ZYLocationAtHome+CoreDataProperties.m in Sources */,
 				09B1E6F81E08E45E0052F55E /* ZYLocationAtHome+CoreDataClass.m in Sources */,

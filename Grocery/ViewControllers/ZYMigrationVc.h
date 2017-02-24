@@ -4,7 +4,7 @@
 //
 //  Created by 王志盼 on 2016/10/19.
 //  Copyright © 2016年 王志盼. All rights reserved.
-//
+//  用来数据迁移的vc
 
 #import <UIKit/UIKit.h>
 
